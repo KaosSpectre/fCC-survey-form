@@ -1,0 +1,191 @@
+<!DOCTYPE >
+<!--Resubmitting because old one is linked to my old codepen.io.-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="survey.css" />
+	</head>
+	<body>
+		<h1 id="title">RWD Beta Course Survey</h1>
+		<p id="description">Please fill in requested info and submit.</p>
+		<form id="survey-form" action="">
+			<fieldset>
+				<label id="name-label"
+					>Name (Required)<input
+						id="name"
+						type="text"
+						class="form-control"
+						placeholder="Smith, John"
+						required
+				/></label>
+				<label id="username"
+					>Username<input
+						type="text"
+						class="form-control"
+						placeholder="Enter your username"
+				/></label>
+				<label id="email-label"
+					>Email (Required)<input
+						type="email"
+						id="email"
+						class="form-control"
+						placeholder="sombody@email.com"
+						required
+				/></label>
+				<label id="number-label"
+					>Age (Required)<input
+						id="number"
+						type="number"
+						min="10"
+						max="99"
+						placeholder="10-99"
+						class="form-control"
+						required
+				/></label>
+			</fieldset>
+			<fieldset>
+				<label>What is your current skill level with coding</label>
+				<select id="dropdown" class="form-group1">
+					<option id="placeholder" value="placeholder">(select one)</option>
+					<option id="neophyte" value="neophyte">Neophyte</option>
+					<option id="coder" value="coder">Coder</option>
+					<option id="programmer" value="programmer">Programmer</option>
+					<option id="computer-scientest" value="computer-scientest">
+						Computer Scientist
+					</option>
+					<option id="developer" value="developer">Developer</option>
+					<option id="engineer" value="engineer">Engineer</option>
+					<option id="architect" value="architect">Architect</option>
+				</select>
+				<label id="completed" class="form-group"
+					>Have you completed any other freeCodeCamp courses?</label
+				>
+				<label class="radio"
+					><input
+						type="radio"
+						id="yes"
+						name="completed"
+						value="yes"
+					/>Yes</label
+				>
+				<label class="radio"
+					><input type="radio" id="no" name="completed" value="no" />No</label
+				>
+				<label>What courses have you completed?(Choose all that apply)</label>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="rwb" />Responsive Web
+					Design (Original)</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="jsaads" />JavaScript
+					Algorithms and Data Structures</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="fedl" />Front End
+					Development Libraries</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="dv" />Data
+					Visualization</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="bedaa" />Back End
+					Developement and APIs</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="qa" />Quality
+					Assurance</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="scwp" />Scientific
+					Computing with Python</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="dawp" />Data Analysis
+					with Python</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="infosec" />Information
+					Security</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="ml" />Machine
+					Learning</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="na" />N/A</label
+				>
+			</fieldset>
+			<fieldset>
+				<label
+					>Do you feel that this version of RWD helped you understand the
+					material better?</label
+				>
+				<label class="radio"
+					><input
+						type="radio"
+						id="yes1"
+						name="completed1"
+						value="yes1"
+					/>Yes</label
+				>
+				<label class="radio"
+					><input
+						type="radio"
+						id="no1"
+						name="completed1"
+						value="no1"
+					/>No</label
+				>
+				<label
+					>What did you like about this course?(Choose all that apply)</label
+				>
+				<label class="checkbox"
+					><input
+						class="checkbox"
+						type="checkbox"
+						value="pacing"
+					/>Pacing</label
+				>
+				<label class="checkbox"
+					><input
+						class="checkbox"
+						type="checkbox"
+						value="challenges"
+					/>Challenges</label
+				>
+				<label class="checkbox"
+					><input
+						class="checkbox"
+						type="checkbox"
+						value="directions"
+					/>Directions</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="userinterface" />User
+					Interface</label
+				>
+				<label class="checkbox"
+					><input class="checkbox" type="checkbox" value="hints" />Error
+					Messages ie. hints as to what was done wrong</label
+				>
+				<label class="checkbox"
+					><input
+						class="checkbox"
+						type="checkbox"
+						value="difficulty"
+					/>Difficulty of the challenges</label
+				>
+				<label>Please describe what you didn't like about the course</label>
+				<textarea cols="30" rows="5"></textarea>
+				<label>On a scale of 1-10 how would you rate this course?</label>
+				<label><input type="number" min="1" max="10" /></label>
+				<label>Any additional suggestions or critiques?</label>
+				<textarea cols="30" rows="5"></textarea>
+			</fieldset>
+			<input type="submit" id="submit" value="Submit" class="submit" />
+		</form>
+	</body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
